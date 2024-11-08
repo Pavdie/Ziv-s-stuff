@@ -1,3 +1,198 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+[saved-theme="dark"] {
+    article {
+        h1 {
+            color: rgb(255, 117, 127);
+        }
+
+        h2 {
+            color: rgb(224, 175, 104);
+        }
+
+        h3 {
+            color: rgb(158, 206, 106);
+        }
+
+        h4 {
+            color: rgb(125, 207, 255);
+        }
+
+        h5 {
+            color: rgb(122, 162, 247);
+        }
+
+        h6 {
+            color: rgb(187, 154, 247);
+        }
+    }
+
+    strong,
+    code {
+        color: #7dcfff !important;
+    }
+
+    span.text-highlight {
+         
+        background-color: rgba(255, 158, 100, 0.4) !important;
+    }
+
+    em {
+        color: #7dcfff !important;
+        ;
+     }
+
+     ::selection {
+        background: rgba(39, 71, 125, 0.6);
+      }
+}
+
+[saved-theme="light"] {
+article {
+        h1 {
+            color: #8c4308;
+    
+        }
+
+        h2 {
+            color: rgb(143, 94, 21);
+        }
+
+        h3 {
+            color: #33635c;
+        }
+
+        h4 {
+            color: rgb(15, 75, 110);
+        }
+
+        h5 {
+            color: rgb(52, 84, 138);
+        }
+
+        h6 {
+            color: rgb(90, 74, 120);
+        }
+    }
+
+    strong{
+        color: #0F4B6E !important;
+    }
+    
+    em {
+        color:#0F4B6E !important;
+    }
+
+    code {
+      color: #343B58 !important; /* tokyonight foreground */
+      background-color: #C3C5C9;
+    }
+
+    span.text-highlight {
+        color: #343B58 !important;
+        background: #BCA093 !important;
+    }
+
+}
+
+::selection {
+    background: rgba(39,71,125,0.6)!important;
+    // color: var(--darkgray);
+  }
+  
+  
+  /* infobox callout */
+.callout[data-callout="infobox"] {
+    background-color: rgba(80, 120, 180, 0.1);
+    --callout-icon: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    float: right;
+    width: 300px;
+    margin: 0px 0px 10px 10px;
+    padding: 5px;
+}
+
+/* mobile breakpoint */
+@media (max-width: 767px) {
+    .callout[data-callout="infobox"] {
+      width: 100%;
+      float: none;
+    }
+}
+  
+@media (max-width: 480px) {
+    .callout[data-callout="infobox"] {
+      width:100%;
+      float: none;
+    }
+}
+
+/* stack infoboxes vertically with 'clear' */
+.callout[data-callout="infobox"] {
+    clear: right;
+}
+
+/* Remove Callout Title */
+.callout[data-callout="infobox"] .callout-title {
+    display: none;
+}
+
+
+/* H2 Title */
+.callout[data-callout="infobox"] h2 {
+    margin: 2px 0px 0px 0px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 4px;
+}
+
+/* H3 Title */
+.callout[data-callout="infobox"] h3 {
+    margin: 2px 0px 0px 0px;
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 4px;
+}
+
+/* Spacing */
+.callout[data-callout="infobox"] p {
+    margin-block-start: 10px;
+    margin-block-end: 0px;
+    width: 100%;
+}
+
+/* Image */
+.callout[data-callout="infobox"] img {
+    display: block;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Table */
+.callout[data-callout="infobox"] table {
+    margin: 0px !important;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgb(30, 30, 30);
+  }
+  
+  .callout[data-callout="infobox"] th {
+    padding-left: 12px; 
+    padding-right: 0px;
+    vertical-align: top;
+  }
+  
+  .callout[data-callout="infobox"] td {
+   padding-left: 12px; 
+   padding-right: 0px;
+   vertical-align: top;
+  }
+  
