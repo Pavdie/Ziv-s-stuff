@@ -1,4 +1,4 @@
-*Огромное спасибо **sasnchis** за программулину!*
+*Огромное спасибо **sasnchis** за программку!*
 
 |ModName|Song Name|Song ID|Easy|Normal|Hard|Extreme|Extra Extreme|
 |---|---|---|---|---|---|---|---|
